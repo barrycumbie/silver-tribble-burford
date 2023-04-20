@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Route Optimization</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet'/>
+  <style>
+    body
+    {
+      margin: 0;
+      padding: 0;
+    }
+    #instructions 
+    {
+      position: absolute;
+      margin: 20px;
+      width: 25%;
+      top: 0;
+      bottom: 20%;
+      padding: 20px;
+      background-color: #fff;
+      overflow-y: scroll;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>		
+  <h1>Welcome to the Route Optimization Application!</h1>
+  <p>Instructions: Enter an address into the below field then press the "Add Address" button to add it to your list.</p>
+  <p>	Once finished adding addresses, click the "Optimize Route" button at the bottom of the page to get the most efficient route for your inputs.</p>
+  <p>Note: For best results try to include as much information as possible (address, city, state).</p>
+  <p>Enter Address Here: <input type="text" id="address" name="address"> <button id="addAddress" name="addAddress">Add Address</button></p> 
+  <table id="addressTable" name="addressTable">
+      <tr>
+        <th>Addresses</th>
+      </tr>
+  </table>
+  <p id="test"></p>
+  <button id="optimizeRoute" name="optimizeRoute">Optimize Route</button>
+  
+</body>
+</html>
